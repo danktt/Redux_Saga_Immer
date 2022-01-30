@@ -1,7 +1,14 @@
+import { Provider } from 'react-redux';
+import Catalog from './components/Catalog';
+import store from './store';
+
 
 function App() {
   return (
-    <h1>Oi ! </h1>
+    <Provider store={store} >
+      <Catalog/>
+
+    </Provider>
   );
 }
 
